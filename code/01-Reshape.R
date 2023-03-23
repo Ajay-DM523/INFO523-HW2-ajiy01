@@ -6,6 +6,7 @@
 
 # Values in column names 
 
+## Reading in the csv
 raw <- read.csv("data/pew.csv", check.names = F)
 
 head(raw)
@@ -69,7 +70,7 @@ df2 <- data.frame(x = c("a", "b", "c"), n = c(3, 4, 5))
 cbind(df1, df2)
 
 # Saving Data
-
+# Writing CSV File
 write.csv(tidy, file = "tidy.csv", row.names = FALSE)
 saveRDS(tidy, "tidy.rds")
 tidy2 <- readRDS("tidy.rds")
